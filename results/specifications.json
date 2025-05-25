@@ -1,0 +1,15 @@
+{
+  "elements": [
+    {
+      "name": "interior partition",
+      "material": "gypsum board",
+      "thickness_cm": 10,
+      "classification": "non-load-bearing",
+      "standards": ["ISO 2190", "Israeli Standard 1490"]
+    },
+    {
+      "name": "roof slab",
+      "material": "reinforced concrete",
+      "thickness_cm": 25,
+      "classification": "structural element",
+      "standards":

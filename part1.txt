@@ -1,0 +1,8 @@
+I developed a basic program to detect objects in an image using a pre-trained YOLO model.
+
+The code analyzed the objects in the image and redrew it with bounding boxes around each detected object.
+
+To run the code, I installed the YOLO library.
+
+Since YOLO depends on additional processing libraries, I identified and installed the necessary dependencies.
+After reading and researching various approaches to object detection, it was fascinating to explore YOLO's powerful assumptions and implement them in efficient code.

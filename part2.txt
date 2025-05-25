@@ -1,0 +1,12 @@
+Summary of Prompt Design:
+
+To achieve consistent and detailed results, the prompt was carefully crafted to request complete specifications for each structural component—covering material, thickness in centimeters, classification, and relevant standards. I selected GPT-4 for this task because of its strong capabilities in extracting structured data and understanding context.
+
+The document, which contained multiple sections, was managed by clearly dividing each element and enforcing a consistent format throughout.
+Evaluation of Output Accuracy:
+
+The model produced structured and accurate JSON output, with relevant fields appropriately filled in.
+
+However, at first, some values—particularly standards and thicknesses—were either missing or unclear. To address this, I refined the prompt to emphasize the need for complete information and inclusion of standards.
+
+This adjustment resulted in much more reliable output, though in a few edge cases, slight manual corrections were still needed.

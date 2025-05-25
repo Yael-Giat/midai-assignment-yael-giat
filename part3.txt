@@ -1,0 +1,31 @@
+Docker Configuration Overview:
+
+
+The container is based on python:3.10-slim, chosen for its minimal size and compatibility with both computer vision and natural language processing libraries.
+
+
+Required packages for YOLO (such as opencv-python, torch, and ultralytics) and language model tools (openai, transformers) are installed using requirements.txt.
+
+
+The main script, generate_output.py, executes the full pipeline: first performing object annotation using YOLO (Stage 1), followed by structured JSON extraction using GPT-4 or a similar model (Stage 2).
+
+
+The container sets /app as its working directory, with final results written to /app/results.
+
+
+To retain results outside the container, the host project directory is mounted into the container using a bind mount (-v $(pwd):/app).
+
+
+The default CMD runs the complete process automatically when the container starts.
+
+
+The output files (annotated_media.png and specifications.json) are saved under results/ and are ready for inspection or further use.
+
+
+Steps to Build and Run:
+To recreate the full process (Stages 1 and 2), first clone the repository. Then, build and run the Docker container using the commands below:
+
+docker build -t structure-extraction .
+docker run --rm -v $(pwd):/app structure-extraction
+
+All generated outputs will appear in the results/ directory of your working folder.
